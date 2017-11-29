@@ -1,39 +1,37 @@
 <!--index.wxml-->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
-    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-        <swiper-item>
-            <image src="{{item}}" />
-        </swiper-item>
-    </block>
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
 </swiper>
 <view class="flow">
-    <image src="/images/flow.png"></image>
+  <image src="/images/flow.png"></image>
 </view>
 <!-- 菜单标题 -->
 <view class="h2" style="background-color:#fff; margin-top:9rpx;">
-    <image style="z-index:1" src="/images/divide_l.png"></image>
-    <text class="title">掌柜推荐</text>
-    <image style="z-index:1" src="/images/divide_r.png"></image>
+  <image style="z-index:1" src="/images/divide_l.png"></image>
+  <text class="title">掌柜推荐</text>
+  <image style="z-index:1" src="/images/divide_r.png"></image>
 </view>
 <view class="c-minheight listWrap" style="background-color:#fff;margin-top:3rpx;">
-    <view class="list">
-        <block wx:for="{{posts_key}}" wx-for-item="item" wx-for-index="idx" wx:key="postId">
-            <view catchtap="menuTap" data-postid="{{item.postId}}">
-                <view class="nvWrap">
-                    <image class="img1" style="border-radius:16rpx;" src="{{item.menuImg}}" />
-                    <view class="c-minheight wx-view_ZhdL6d">
-                        <text class="text1">{{item.sketch}}</text>
-                        <text class="text2">{{item.title}}</text>
-                        <view class="c-block wrap1">
-                            <image style="width:64rpx;height:64rpx;margin-left:238rpx;margin-top:-250rpx;" src="/images/getCar.png"></image>
-                            <view class="price_text">
-                                <text>￥{{item.price}}</text>
-                            </view>
-                        </view>
-                    </view>
-                </view>
-            </view>
-        </block>
-    </view>
+  <view class="list">
+    <block wx:for="{{posts_key}}" wx-for-item="item" wx-for-index="idx" wx:key="postId">
+      <view catchtap="menuTap" data-postid="{{item.postId}}">
+        <view class="nvWrap">
+          <image class="img1" style="border-radius:16rpx;" src="{{item.menuImg}}" />
+          <view style='overflow:hidden;padding-left:5px;padding-right:5px;padding-top:5px;padding-bottom:5px;'>
+            <text class="text2">{{item.title}}</text>
+            <text class="text1">{{item.sketch}}</text>
+          </view>
+          <view class="wrap1">
+            <text class="price_text">￥{{item.price}}</text>
+            <image style="width:64rpx;height:64rpx;float:right;" src="/images/getCar.png"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
 
-    <view class="c-minheight wx-view_tvMgwg" /></view>
+  <view class="c-minheight wx-view_tvMgwg" /></view>
