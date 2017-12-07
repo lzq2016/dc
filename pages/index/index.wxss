@@ -135,3 +135,72 @@ height:240px;
 display:inline-block;
 overflow:hidden;
 }
+.layer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 10;
+}
+.foodDetail{
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  background-color: #fff;
+  border-radius: 5rpx;
+}
+.foodSwiperWrap{
+}
+.foodImg{
+  border-top-left-radius: 5rpx;
+border-top-right-radius: 5rpx;
+}
+.titleWrap{
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.foodTitle{
+  font-size: 14px;
+  float: left;
+}
+.sales{
+  font-size: 12px;
+  float: right;
+  color: #999;
+}
+.mark{
+  font-size: 13px;
+  display: inline-block;
+  border: 1rpx solid #ccc;
+  border-radius: 5rpx;
+  padding:2px 4px;
+  margin-right: 6px;
+}
+.markWrap{
+  margin-left: 15px;
+  margin-top: 7px;
+}
+.markSelected{
+  border: 1rpx solid #ff5408;
+}
+.moneyWrap{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.price_detail{
+    color: #ff5408;
+    font-size:32rpx;
+    float: left;
+    line-height: 64rpx;
+}

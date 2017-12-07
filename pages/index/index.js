@@ -30,5 +30,8 @@ Page({
     wx.navigateTo({
       url: '../Buy/Buy?id=' + postId
     })
+  },
+  layer:function(e){
+    
   }
 })

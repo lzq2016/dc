@@ -33,5 +33,31 @@
       </view>
     </block>
   </view>
-
   <view class="c-minheight wx-view_tvMgwg" /></view>
+<view class='layer' bindtap="layer">
+</view>
+<view class="foodDetail">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class='foodSwiperWrap'>
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class='foodImg'/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='titleWrap'>
+    <text class='foodTitle'>鱼香肉丝</text>
+    <text class='sales'>已售20份</text>
+  </view>
+  <view class='markWrap'>
+    <text class='mark'>香辣</text>
+    <text class='mark markSelected'>香辣</text>
+  </view>
+  <view class='markWrap'>
+    <text class='mark'>小份</text>
+    <text class='mark markSelected'>大份</text>
+  </view>
+  <view class='moneyWrap'>
+    <text class="price_detail">￥200</text>
+    <image style="width:64rpx;height:64rpx;float:right;" src="/images/getCar.png"></image>
+  </view>
+</view>

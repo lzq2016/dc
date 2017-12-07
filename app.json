@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/menu/menu"
   ],
   "tabBar": {
     "backgroundColor": "#fbfafa",
@@ -16,10 +17,10 @@
         "selectedIconPath": "images/homeSelected.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/menu/menu",
         "selectedIconPath": "images/categorySelected.png",
         "iconPath": "images/category.png",
-        "text": "分类"
+        "text": "菜单"
       },
       {
         "selectedIconPath": "images/shoppingCarSelected.png",
