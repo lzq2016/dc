@@ -1,0 +1,33 @@
+.h2 {
+  margin-top: 39rpx;
+  text-align: center;
+}
+.h2 image {
+  width: 146rpx;
+  height: 10rpx;
+  position: relative;
+  top: -4rpx;
+}
+
+.h2 text {
+  color: #959595;
+  margin: 0 40rpx;
+  font-family: "Microsoft YaHei";
+  font-size: 15px;
+}
+.menuWrap{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+.titleWrap{
+    font-size:15px;
+    background-color: #FFDA44;
+    height: 35px;
+    color: #fff;
+    line-height: 35px;
+}
+.list{
+    background-color: #EBEBEB;
+    font-size: 14px;
+}

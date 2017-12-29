@@ -21,12 +21,25 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "菜单",
-					"pathName": "pages/menu/menu"
+					"pathName": "pages/menu/menu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dish",
+					"pathName": "pages/dish/dish",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
 				}
 			]
 		}

@@ -1,0 +1,18 @@
+<view class="h2" style="background-color:#fff; margin-top:9rpx;">
+    <image style="z-index:1" src="/images/divide_l.png"></image>
+    <text class="title">已点美食</text>
+    <image style="z-index:1" src="/images/divide_r.png"></image>
+</view>
+<view class='menuWrap'>
+    <view class='titleWrap'>
+        <text style='margin-left:3%;'>菜式</text>
+        <text style='margin-left:52%;'>份数</text>
+        <text style='margin-left:3%;'>单价</text>
+        <text style='margin-left:3%;'>取消</text>
+    </view>
+    <view class='listWrap'>
+        <view class='list'>
+        
+        </view>
+    </view>
+</view>
