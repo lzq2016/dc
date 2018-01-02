@@ -1,33 +1,51 @@
 .h2 {
-  margin-top: 39rpx;
-  text-align: center;
+    margin-top: 39rpx;
+    text-align: center;
 }
+
 .h2 image {
-  width: 146rpx;
-  height: 10rpx;
-  position: relative;
-  top: -4rpx;
+    width: 146rpx;
+    height: 10rpx;
+    position: relative;
+    top: -4rpx;
 }
 
 .h2 text {
-  color: #959595;
-  margin: 0 40rpx;
-  font-family: "Microsoft YaHei";
-  font-size: 15px;
+    color: #959595;
+    margin: 0 40rpx;
+    font-family: "Microsoft YaHei";
+    font-size: 15px;
 }
-.menuWrap{
+
+.menuWrap {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 20px;
 }
-.titleWrap{
-    font-size:15px;
-    background-color: #FFDA44;
+
+.titleWrap {
+    font-size: 15px;
+    background-color: #ffda44;
     height: 35px;
     color: #fff;
     line-height: 35px;
 }
-.list{
-    background-color: #EBEBEB;
+
+.list {
+    background-color: #ebebeb;
     font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.list text {
+    vertical-align: middle;
+}
+
+.list image {
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
 }

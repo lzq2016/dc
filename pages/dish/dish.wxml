@@ -6,13 +6,34 @@
 <view class='menuWrap'>
     <view class='titleWrap'>
         <text style='margin-left:3%;'>菜式</text>
-        <text style='margin-left:52%;'>份数</text>
-        <text style='margin-left:3%;'>单价</text>
+        <text style='margin-left:50%;'>份数</text>
+        <text style='margin-left:8%;'>单价</text>
         <text style='margin-left:3%;'>取消</text>
     </view>
     <view class='listWrap'>
         <view class='list'>
-        
+            <text style='margin-left:3%;float:left;'>鱼香肉丝</text>
+            <image src='/images/add.png' style='margin-left:37%;float:left;'></image>
+            <text style='float:left;margin-left:3px;margin-right:3px;'>1</text>
+            <image src='/images/minus.png' style='float:left;'></image>
+            <text style='margin-left:5%;float:left;'>20</text>
+            <image src='/images/del.png' style='float:right;margin-right:4%;'></image>
         </view>
+        <view class='list'>
+            <text style='margin-left:3%;float:left;'>鱼香肉丝</text>
+            <image src='/images/add.png' style='margin-left:37%;float:left;'></image>
+            <text style='float:left;margin-left:3px;margin-right:3px;'>1</text>
+            <image src='/images/minus.png' style='float:left;'></image>
+            <text style='margin-left:5%;float:left;'>20</text>
+            <image src='/images/del.png' style='float:right;margin-right:4%;'></image>
+        </view>
+    </view>
+    <view style='font-size:15px;height:35px;overflow:hidden;margin-top:5px;'>
+        <view style='background-color:#ffda44;height:35px;line-height:35px;color:#fff;float:left;width:70%;'>
+            <text style='margin-left:3%;'>本次点单共计消费:</text>
+            <text style='color:#E30D06;font-size:17px;margin-right:3px;margin-left:3px;'>12</text>
+            <text style='font-size:15px;'>元</text>
+        </view>
+        <view style='height:35px;line-height:35px;float:right;background-color:#FE0000;color:#fff;width:30%;text-align:center;'>去支付</view>
     </view>
 </view>
