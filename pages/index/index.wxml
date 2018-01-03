@@ -17,13 +17,13 @@
 </view>
 <view class="c-minheight listWrap" style="background-color:#fff;margin-top:3rpx;">
   <view class="list">
-    <block wx:for="{{posts_key}}" wx-for-item="item" wx-for-index="idx" wx:key="postId">
-      <view catchtap="menuTap" data-postid="{{item.postId}}">
+    <block wx:for="{{posts_key}}" wx-for-item="item" wx-for-index="idx" wx:key="dishid">
+      <view catchtap="menuTap" data-dishid="{{item.dishid}}">
         <view class="nvWrap">
           <image class="img1" style="border-radius:16rpx;" src="{{item.menuImg}}" />
           <view style='overflow:hidden;padding-left:5px;padding-right:5px;padding-top:5px;padding-bottom:5px;'>
             <text class="text2">{{item.title}}</text>
-            <text class="text1">{{item.sketch}}</text>
+            <text class="text1">{{item.flavor}}</text>
           </view>
           <view class="wrap1">
             <text class="price_text">￥{{item.price}}</text>
@@ -34,9 +34,9 @@
     </block>
   </view>
   <view class="c-minheight wx-view_tvMgwg" /></view>
-<view class='layer' bindtap="layer">
+<view class='layer' style="height:{{layerHeight}}px;display:{{foodDetailShow}}" catchtouchstart="layer">
 </view>
-<view class="foodDetail">
+<view class="foodDetail" style='display:{{foodDetailShow}};' catchtouchmove="layer1">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class='foodSwiperWrap'>
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">
       <swiper-item>
@@ -45,12 +45,12 @@
     </block>
   </swiper>
   <view class='titleWrap'>
-    <text class='foodTitle'>鱼香肉丝</text>
-    <text class='sales'>已售20份</text>
+    <text class='foodTitle'>{{foodDetailContent.title}}</text>
+    <text class='sales'>已售{{foodDetailContent.usereat}}份</text>
   </view>
   <view class='markWrap'>
-    <text class='mark'>香辣</text>
-    <text class='mark markSelected'>香辣</text>
+    <text class="{{currentStandard==index?'mark markSelected':'mark'}}" wx:for="{{foodDetailContent.standard}}" data-code="{{index}}" catchtap="standardTap">{{item}}</text>
+    <!-- <text class='mark markSelected'>香辣</text> -->
   </view>
   <view class='markWrap'>
     <text class='mark'>小份</text>

@@ -144,16 +144,18 @@ overflow:hidden;
   background: #000;
   opacity: 0.5;
   z-index: 10;
+  display: none;
 }
 .foodDetail{
   width: 70%;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 100;
   background-color: #fff;
   border-radius: 5rpx;
+  display: none;
 }
 .foodSwiperWrap{
 }

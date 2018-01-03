@@ -37,3 +37,6 @@
         <view style='height:35px;line-height:35px;float:right;background-color:#FE0000;color:#fff;width:30%;text-align:center;'>去支付</view>
     </view>
 </view>
+<!-- <view>
+<image src='/images/icon1.png' style='width:202px;height:65px;border:1rpx solid #242424;'></image>
+</view> -->
