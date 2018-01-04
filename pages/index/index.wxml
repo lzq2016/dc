@@ -53,11 +53,11 @@
     <!-- <text class='mark markSelected'>香辣</text> -->
   </view>
   <view class='markWrap'>
-    <text class='mark'>小份</text>
-    <text class='mark markSelected'>大份</text>
+    <text class="{{currentSize==index?'mark markSelected':'mark'}}" wx:for="{{foodDetailContent.sizes}}" data-code="{{index}}" catchtap="sizeTap">小份</text>
+    <!-- <text class='mark markSelected'>大份</text> -->
   </view>
   <view class='moneyWrap'>
-    <text class="price_detail">￥200</text>
+    <text class="price_detail">￥{{foodDetailContent.price}}</text>
     <image style="width:64rpx;height:64rpx;float:right;" src="/images/getCar.png"></image>
   </view>
 </view>

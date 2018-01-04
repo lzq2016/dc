@@ -20,7 +20,8 @@ Page({
         layerHeight: 0,
         foodDetailShow:'none',
         foodDetailContent:{},
-        currentStandard:0
+        currentStandard:0,
+        currentSize:0
     },
 
     onLoad: function () {
@@ -60,9 +61,17 @@ Page({
     
     },
     standardTap: function (e) {
-        var code = event.currentTarget.dataset.code;
+        var that = this;
+        var code = e.currentTarget.dataset.code;
         that.setData({
             currentStandard: code
+        })
+    },
+    sizeTap: function (e) {
+        var that = this;
+        var code = e.currentTarget.dataset.code;
+        that.setData({
+            currentSize: code
         })
     }
 })

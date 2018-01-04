@@ -31,7 +31,6 @@ var menu_database = [
         standard: '[{"0":"小份","1":"中份","2":"大份","3":"超大份","name":"份量","code":"cm"},{"1":"超辣","0":"微辣","2":"无辣","name":"口味","code":"ys"}]',
         storeTotal: 100,
         rid: "34",
-        rn: "3号店",
         dishid: 2,
     },
 
@@ -41,8 +40,7 @@ var menu_database = [
         title: "肉饭",
         price: "10",
         dishid: 3,
-        rid: "35",
-        rn: "4号店"
+        rid: "35"
     },
 
     {
@@ -53,8 +51,7 @@ var menu_database = [
         standard: '[{"0":"小份","1":"中份","2":"大份","3":"超大份","name":"份量","code":"cm"},{"1":"超辣","0":"微辣","2":"无辣","name":"口味","code":"ys"}]',
         storeTotal: 10000,
         dishid: 4,
-        rid: "36",
-        rn: "5号店"
+        rid: "36"
     },
     {
         menuImg: "http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/menuList/6.jpg",
@@ -64,9 +61,7 @@ var menu_database = [
         standard: '[{"0":"小份","1":"中份","2":"大份","3":"超大份","name":"份量","code":"cm"},{"1":"超辣","0":"微辣","2":"无辣","name":"口味","code":"ys"}]',
         storeTotal: 59,
         dishid: 5,
-        rid: "37",
-        rn: "6号店",
-        rn3:"9号店"
+        rid: "37"
     },
 ]
 
