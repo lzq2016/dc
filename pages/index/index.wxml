@@ -27,7 +27,7 @@
           </view>
           <view class="wrap1">
             <text class="price_text">￥{{item.price}}</text>
-            <image style="width:64rpx;height:64rpx;float:right;" src="/images/getCar.png"></image>
+            <image style="width:64rpx;height:64rpx;float:right;" src="/images/getCar.png" catchtap="addtocar" data-dishid="{{item.dishid}}"></image>
           </view>
         </view>
       </view>
@@ -58,6 +58,6 @@
   </view>
   <view class='moneyWrap'>
     <text class="price_detail">￥{{foodDetailContent.price}}</text>
-    <image style="width:64rpx;height:64rpx;float:right;" src="/images/getCar.png"></image>
+    <image style="width:64rpx;height:64rpx;float:right;" src="/images/getCar.png" catchtap="addtocar" data-dishid="{{foodDetailContent.dishid}}"></image>
   </view>
 </view>
