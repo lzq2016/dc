@@ -79,7 +79,7 @@
                 <span>￥{{item.price*item.num}}</span> 
               </view>
 
-              <!--cartControl-->
+             
               <view class="cartControl-wrapper" style="bottom:10px;">
                 <view class="cartControl" style="width:80px;">
                   <view name="fade">

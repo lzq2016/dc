@@ -1189,7 +1189,7 @@ Page({
     var index = e.currentTarget.dataset.itemIndex;
     var parentIndex = e.currentTarget.dataset.parentindex;
     this.data.goods[parentIndex].foods[index].Count++;
-    var mark = 'a' + index + 'b' + parentIndex
+    var mark = 'a' + index + 'b' + parentIndex;
     var price = this.data.goods[parentIndex].foods[index].price;
     var num = this.data.goods[parentIndex].foods[index].Count;
     var name = this.data.goods[parentIndex].foods[index].name;
